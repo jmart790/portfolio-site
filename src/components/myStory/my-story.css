@@ -1,0 +1,34 @@
+.my-story-container {
+  height: 300px;
+  transform: translateY(-60px);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    '.            my-story'
+    'story-one    story-two'
+    'story-three  story-four';
+}
+.my-story {
+  grid-area: my-story;
+  border: 2px solid blue;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.story-one {
+  grid-area: story-one;
+  border: 2px solid green;
+}
+.story-two {
+  grid-area: story-two;
+  border: 2px solid red;
+}
+.story-three {
+  grid-area: story-three;
+  border: 2px solid grey;
+}
+.story-four {
+  grid-area: story-four;
+  border: 2px solid black;
+}

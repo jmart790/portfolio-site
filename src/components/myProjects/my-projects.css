@@ -1,0 +1,45 @@
+.my-projects-container {
+  background-color: tomato;
+  -webkit-clip-path: polygon(100% 25%, 100% 85%, 50% 100%, 0 85%, 0 0);
+  clip-path: polygon(100% 25%, 100% 85%, 50% 100%, 0 85%, 0 0);
+  height: 400px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'my-projects  .'
+    'carousel-tracker carousel-tracker'
+    'title title'
+    'links links'
+    'video video'
+    'description description';
+}
+.my-projects {
+  grid-area: my-projects;
+  padding: 2rem 0;
+  border: 2px solid black;
+}
+.carousel-tracker,
+.project-title,
+.project-links,
+.project-video,
+.project-description {
+  border: 2px solid black;
+  justify-self: center;
+}
+.carousel-tracker {
+  grid-area: carousel-tracker;
+}
+.project-title {
+  grid-area: title;
+}
+.project-links {
+  grid-area: links;
+}
+.project-video {
+  grid-area: video;
+}
+.project-description {
+  grid-area: description;
+}

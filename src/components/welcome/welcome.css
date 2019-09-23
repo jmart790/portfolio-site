@@ -1,0 +1,35 @@
+.welcome-container {
+  background-color: rgb(62, 139, 222);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  height: 400px;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    'header image'
+    'text   image'
+    'action .';
+}
+.welcome-text {
+  grid-area: header;
+  border: 2px solid red;
+}
+.professional-label {
+  grid-area: text;
+  border: 2px solid yellow;
+}
+.bitmoji {
+  grid-area: image;
+  border: 2px solid white;
+  justify-self: center;
+}
+.bitmoji img {
+  width: 10rem;
+}
+.call-to-action {
+  grid-area: action;
+  border: 2px solid green;
+}

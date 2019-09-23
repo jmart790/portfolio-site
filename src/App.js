@@ -1,14 +1,13 @@
 import React from 'react'
-
 import './App.css'
-import Welcome from './components/Welcome'
-import MyStory from './components/MyStory'
-import MyProjects from './components/MyProjects'
-import ContactMe from './components/ContactMe'
+import Welcome from './components/welcome/Welcome'
+import MyStory from './components/myStory/MyStory'
+import MyProjects from './components/myProjects/MyProjects'
+import ContactMe from './components/contactMe/ContactMe'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='site'>
       <Welcome />
       <MyStory />
       <MyProjects />
