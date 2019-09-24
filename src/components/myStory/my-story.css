@@ -1,34 +1,56 @@
 .my-story-container {
-  height: 300px;
+  height: 450px;
   transform: translateY(-60px);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-areas:
-    '.            my-story'
-    'story-one    story-two'
-    'story-three  story-four';
 }
-.my-story {
-  grid-area: my-story;
+.my-story-label {
   border: 2px solid blue;
-  text-align: center;
+  text-align: right;
   padding-bottom: 1rem;
 }
-.story-one {
-  grid-area: story-one;
-  border: 2px solid green;
+.story-content {
+  height: 400px;
 }
-.story-two {
-  grid-area: story-two;
-  border: 2px solid red;
+.story-txt {
+  text-align: justify;
+  line-height: 1.5rem;
 }
-.story-three {
-  grid-area: story-three;
-  border: 2px solid grey;
+.story-txt h1 {
+  margin: 0 0 20px;
 }
-.story-four {
-  grid-area: story-four;
+.story-img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+.story-one-img {
+  background-color: aqua;
+  float: left;
+  margin: 2rem 1rem 1rem 0;
+}
+
+.story-two-img {
+  background-color: rgb(255, 77, 0);
+  float: right;
+  margin: 2rem 0 1rem 1rem;
+}
+.story-three-img {
+  background-color: rgb(34, 255, 0);
+  float: left;
+  margin: 2rem 1rem 1rem 0;
+}
+
+.story-four-img {
+  background-color: rgb(255, 234, 0);
+  float: right;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.story-buttons {
   border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.story-buttons button {
+  font-size: 2rem;
 }
