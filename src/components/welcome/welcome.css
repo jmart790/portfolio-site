@@ -2,8 +2,6 @@
   background-color: rgb(62, 139, 222);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  height: 400px;
-  z-index: 1;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
