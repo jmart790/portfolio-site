@@ -23,16 +23,16 @@ function ContactMe() {
       </div>
       <div className='contact-form'>
         <form className='form' onSubmit={submitHandler}>
-          <p type='Name:'>
+          <p className='input-container' type='Name:'>
             <input placeholder='Write your name here..' {...bindName} />
           </p>
-          <p type='Email:'>
+          <p className='input-container' type='Email:'>
             <input placeholder='Let us know how to contact you back..' {...bindEmail} />
           </p>
-          <p type='Message:'>
+          <p className='input-container' type='Message:'>
             <input placeholder='What would you like to tell us..' {...bindMessage} />
           </p>
-          <button>Send Message</button>
+          <button className='form-btn'>Send Message</button>
         </form>
       </div>
 

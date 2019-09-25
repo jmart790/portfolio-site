@@ -22,9 +22,7 @@
 .contact-form {
   grid-area: input-field;
 }
-/* .sent-image {
-  grid-area: sent-image;
-} */
+
 .thank-you {
   grid-area: thank-you;
   justify-self: center;
