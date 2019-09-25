@@ -36,32 +36,18 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
+  @media screen and (min-width: 300px) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 500px 800px 500px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-        'header'
-        'main-story'
-        'main-projects'
-        'main-contact';
-    }
-
-    .welcome-container {
-      grid-area: header;
-    }
-
-    .my-story-container {
-      grid-area: main-story;
-    }
-
-    .my-projects-container {
-      grid-area: main-projects;
-    }
-
-    .contact-me-container {
-      grid-area: main-contact;
+      grid-template-rows: 700px 500px 1600px 600px;
     }
   }
 }
