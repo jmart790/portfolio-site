@@ -1,18 +1,15 @@
 .contact-me-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
-    'contact-me contact-me'
-    'input-field   sent-image'
-    'input-field  send-button'
-    'thank-you thank-you';
+    'contact-me'
+    'input-field'
+    'thank-you';
 }
 
 .contact-me,
 .contact-form,
-.sent-image,
-.submit-button,
 .thank-you {
   border: 2px solid black;
 }
@@ -20,17 +17,14 @@
 .contact-me {
   grid-area: contact-me;
   justify-self: center;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 .contact-form {
   grid-area: input-field;
 }
-.sent-image {
+/* .sent-image {
   grid-area: sent-image;
-}
-.submit-button {
-  grid-area: send-button;
-}
+} */
 .thank-you {
   grid-area: thank-you;
   justify-self: center;
