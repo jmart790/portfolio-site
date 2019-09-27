@@ -5,7 +5,7 @@ import { setApiKey, send } from '@sendgrid/mail' //sendgrid library to send emai
 const app = express()
 
 setApiKey(process.env.SENDGRID_API_KEY)
-console.log(process.env.SENDGRID_API_KEY)
+// console.log(process.env.SENDGRID_API_KEY)
 
 app.use(cors()) // without it Sendgrid will not send
 
