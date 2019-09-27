@@ -7,13 +7,23 @@ function ContactMe() {
   const [name, bindName, resetName] = useInput('')
   const [email, bindEmail, resetEmail] = useInput('')
   const [message, bindMessage, resetMessage] = useInput('')
+  const TOPIC = 'MY_SITE_MESSAGE'
+  const RECIPIENT = 'jmart790@fiu.edu'
 
   const submitHandler = e => {
     e.preventDefault()
     alert(`Hello ${name} \n ${email} \n ${message}`)
+    sendEmail()
     resetName()
     resetEmail()
     resetMessage()
+  }
+
+  const sendEmail = _ => {
+    fetch(
+      `http://127.0.0.1:3001/send-email?recipient=${RECIPIENT}&sender=${email}&topic=${TOPIC}&text=${message}`
+    ).catch(err => console.log(err))
+    console.log('sent email', RECIPIENT)
   }
 
   return (
