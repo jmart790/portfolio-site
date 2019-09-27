@@ -1,5 +1,5 @@
 .welcome-container {
-  background-color: rgb(62, 139, 222);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
@@ -13,21 +13,64 @@
 }
 .welcome-text {
   grid-area: header;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .professional-label {
   grid-area: text;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 .bitmoji {
   grid-area: image;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   justify-self: center;
 }
 .bitmoji img {
-  width: 10rem;
+  width: 15rem;
 }
 .call-to-action {
   grid-area: action;
-  border: 2px solid green;
+  /* border: 2px solid green; */
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: auto;
+  background-color: white;
+}
+
+.round {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.right-in:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -12px;
+  top: 15px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: white transparent transparent white;
+}
+
+/* talk bubble contents */
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 2rem;
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
