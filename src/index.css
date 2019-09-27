@@ -8,6 +8,7 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito', sans-serif;
 }
 
 code {
@@ -36,13 +37,22 @@ CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 599px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 400px 500px 800px 500px;
     }
   }
+
+  @media screen and (min-width: 600px) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 700px 500px 1200px 600px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     .site {
       display: grid;
