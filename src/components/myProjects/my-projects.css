@@ -1,32 +1,92 @@
 .my-projects-container {
-  background-color: tomato;
-  -webkit-clip-path: polygon(100% 15%, 100% 85%, 50% 100%, 0 85%, 0 0);
-  clip-path: polygon(100% 15%, 100% 85%, 50% 100%, 0 85%, 0 0);
-  /* min-height: fit-content; */
+  background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  -webkit-clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
+  clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
+  display: grid;
+  grid-template-rows: 26% 8% 55%;
 }
-.my-projects {
-  /* grid-area: my-projects; */
-  padding: 4rem 0;
-  border: 2px solid black;
+.my-projects-label {
+  margin: 4rem 0;
+  padding: 1rem 0;
+  justify-self: baseline;
+  font-size: 2rem;
+}
+.my-projects-container h1,
+.carousel-projects,
+.project-title {
+  background-color: white;
+}
+.my-projects-label h1 {
+  padding: 1rem;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+  border-radius: 25px;
 }
 .carousel-projects {
   display: grid;
+  grid-template-rows: 2fr 1fr 0.5fr 2fr 1fr;
   justify-items: center;
+  border: 10px solid white;
+  border-radius: 25px;
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.187);
+}
+.project-title {
+  z-index: -1;
+  border-radius: 15px 15px 0 0;
+  padding: 0.7rem 2rem 1.2rem 2rem;
+  transform: translateY(1.4rem);
+  justify-self: right;
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.187);
 }
 .project-title,
 .project-links {
-  justify-self: right;
+  font-size: 1.5rem;
 }
 .project-image {
-  width: 100%;
+  width: 95%;
+  padding: 1rem 0;
+}
+.projects-indicator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  height: 100%;
+  width: 95%;
 }
 
 .projects-indicator button {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 0 1rem;
 }
-.pause-btn {
-  padding: 0 2rem;
+
+.pause-btn,
+.unselected-project {
+  background-color: transparent;
 }
-.current-index {
-  background-color: aquamarine;
+.pause-btn:hover {
+  transform: scale(1.1);
+}
+.pause-btn:active {
+  transform: scale(0.9);
+}
+
+.selected-project {
+  border-radius: 25px;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  color: white;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.project-description {
+  line-height: 1.7rem;
+  font-size: 1.7rem;
+  width: 95%;
+}
+.project-description h2 {
+  margin-bottom: 1.2rem;
+}
+
+.project-links {
+  color: black;
+  width: 95%;
+  text-align: end;
+  padding: 1rem 0;
 }
