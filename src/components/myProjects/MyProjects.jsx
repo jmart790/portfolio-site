@@ -23,11 +23,12 @@ const MyProjects = () => {
 
   const handleClick = id => setIndex(id)
   const handlePlay = _ => setIsplaying(!isPlaying)
-  const showIndex = currentIndex => (index === currentIndex ? 'current-index' : '')
+  const showIndex = currentIndex =>
+    index === currentIndex ? 'selected-project' : 'unselected-project'
 
   return (
     <div className='my-projects-container container'>
-      <div className='my-projects'>
+      <div className='my-projects-label'>
         <h1>
           My
           <br />
@@ -35,27 +36,39 @@ const MyProjects = () => {
         </h1>
       </div>
 
+      <div className='project-title'>
+        <h1>{projectData[index].title}</h1>
+      </div>
       <div className='carousel-projects'>
-        <div className='project-title'>{projectData[index].title}</div>
         <img src={projectData[index].image} className='project-image' alt='project' />
+
         <div className='projects-indicator'>
           {projectData.map(project => {
             return (
               <button
                 key={project.id}
-                className={showIndex(project.id)}
+                className={`ind-btn ${showIndex(project.id)}`}
                 onClick={_ => handleClick(project.id)}
               >
-                {project.id}
+                <i class={project.icon}></i>
               </button>
             )
           })}
           <button className='pause-btn' onClick={handlePlay}>
-            {isPlaying ? '||' : '>'}
+            {isPlaying ? <i class='fas fa-pause'></i> : <i class='fas fa-play'></i>}
           </button>
         </div>
-        <div className='project-description'>{projectData[index].description}</div>
-        <div className='project-links'>{projectData[index].github}</div>
+
+        <div className='divider'></div>
+
+        <div className='project-description'>
+          <h2>Description</h2>
+          <p>{projectData[index].description}</p>
+        </div>
+
+        <div className='project-links'>
+          <a href={projectData[index].github}>Github Link</a>
+        </div>
       </div>
     </div>
   )
