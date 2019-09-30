@@ -1,27 +1,23 @@
 .welcome-container {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
     'header image'
-    'text   image'
+    'texts   image'
     'action .';
 }
 .welcome-text {
   grid-area: header;
-  /* border: 2px solid red; */
 }
 .professional-label {
-  grid-area: text;
-  /* border: 2px solid yellow; */
+  grid-area: texts;
 }
 .bitmoji {
   grid-area: image;
-  /* border: 2px solid white; */
   justify-self: center;
 }
 .bitmoji img {
@@ -29,17 +25,16 @@
 }
 .call-to-action {
   grid-area: action;
-  /* border: 2px solid green; */
 }
 
 /* CSS talk bubble */
 .talk-bubble {
-  margin: 40px;
+  margin: 2rem;
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: auto;
+  width: 12rem;
   background-color: white;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
 }
 
 .round {
@@ -64,7 +59,7 @@
 
 /* talk bubble contents */
 .talktext {
-  padding: 1em;
+  padding: 1rem;
   text-align: left;
   line-height: 1.5em;
   font-size: 2rem;

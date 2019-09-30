@@ -20,7 +20,7 @@ function Welcome() {
       } else {
         setIndex(index + 1)
       }
-    }, 4000)
+    }, 3000)
     return () => clearInterval(interval)
   }, [index, messages.length])
 

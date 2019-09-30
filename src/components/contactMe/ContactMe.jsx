@@ -1,7 +1,7 @@
 import React from 'react'
 import useInput from '../hooks/useInput'
 import './contact-me.css'
-import './form.css'
+// import './form.css'
 
 function ContactMe() {
   const [name, bindName, resetName] = useInput('')
@@ -28,25 +28,25 @@ function ContactMe() {
 
   return (
     <div className='contact-me-container container'>
-      <div className='contact-me'>
+      <div className='contact-me-label'>
         <h1>Contact Me</h1>
       </div>
       <div className='contact-form'>
         <form className='form' onSubmit={submitHandler}>
-          <p className='input-container' type='Name:'>
-            <input placeholder='Write your name here..' {...bindName} />
+          <p className='input-container' type='Name'>
+            <input placeholder='Write your name here...' {...bindName} />
           </p>
-          <p className='input-container' type='Email:'>
-            <input placeholder='Let us know how to contact you back..' {...bindEmail} />
+          <p className='input-container' type='Email'>
+            <input placeholder='Let me know how to contact you back...' {...bindEmail} />
           </p>
-          <p className='input-container' type='Message:'>
-            <input placeholder='What would you like to tell us..' {...bindMessage} />
+          <p className='input-container' type='Message'>
+            <input placeholder='What would you like to tell me...' {...bindMessage} />
           </p>
-          <button className='form-btn'>Send Message</button>
+          <button className='form-btn'>Send</button>
         </form>
       </div>
 
-      <div className='thank-you'>Thank you for stopping bye</div>
+      <div className='thank-you'>Thank you for stopping by</div>
     </div>
   )
 }

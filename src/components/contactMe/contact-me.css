@@ -8,16 +8,15 @@
     'thank-you';
 }
 
-.contact-me,
-.contact-form,
-.thank-you {
-  border: 2px solid black;
-}
-
-.contact-me {
+.contact-me-label {
   grid-area: contact-me;
   justify-self: center;
-  padding: 1rem 0;
+  font-size: 2rem;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+  border-radius: 25px;
+  margin: 2rem 0;
 }
 .contact-form {
   grid-area: input-field;
@@ -26,4 +25,59 @@
 .thank-you {
   grid-area: thank-you;
   justify-self: center;
+  margin: 1rem 0;
+}
+
+.form {
+  height: 640px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+  border-radius: 25px;
+}
+input,
+.form-btn {
+  font-size: 1.5rem;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+.input-container:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.form-btn {
+  float: right;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.187);
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+  border-radius: 25px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.form-btn:hover {
+  transform: scale(1.1);
+}
+.form-btn:focus,
+.form-btn:active {
+  transform: scale(0.9);
 }

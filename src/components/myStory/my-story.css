@@ -1,25 +1,41 @@
 .my-story-container {
   transform: translateY(-60px);
+  display: grid;
+  grid-template-rows: 25% 75% 20%;
 }
 .my-story-label {
-  border: 2px solid blue;
-  text-align: right;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  font-size: 2rem;
+  justify-self: end;
+}
+.my-story-label h1,
+.story-content,
+.story-buttons button {
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+}
+.my-story-label h1,
+.story-content {
+  padding: 1rem;
+  border-radius: 25px;
 }
 .story-content {
-  height: 400px;
+  height: fit-content;
 }
 .story-txt {
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  font-size: 1.5rem;
 }
 .story-txt h1 {
   margin: 0 0 20px;
 }
+.story-img,
+.story-buttons button {
+  border-radius: 50%;
+}
 .story-img {
   height: 10rem;
   width: 10rem;
-  border-radius: 50%;
   shape-outside: circle();
 }
 .story-one-img {
@@ -27,11 +43,15 @@
   float: left;
   margin: 2rem 1rem 1rem 0;
 }
-
 .story-two-img {
   background-color: rgb(255, 77, 0);
   float: right;
   margin: 2rem 0 1rem 1rem;
+}
+.my-story-label,
+.story-two h1,
+.story-four h1 {
+  text-align: end;
 }
 .story-three-img {
   background-color: rgb(34, 255, 0);
@@ -40,16 +60,29 @@
 }
 
 .story-four-img {
-  background-color: rgb(255, 234, 0);
+  background-color: orange;
   float: right;
   margin: 2rem 0 1rem 1rem;
 }
 
 .story-buttons {
-  border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
 }
+
 .story-buttons button {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  color: #ffffff;
+  width: 4rem;
+  height: 4rem;
   font-size: 2rem;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
+}
+
+.story-buttons button:active,
+.story-buttons button:hover,
+.story-buttons button:focus {
+  background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
