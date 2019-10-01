@@ -5,7 +5,7 @@ export const storyData = [
     image: 'navy',
     title: 'US Navy',
     description:
-      'Lorem ipsum dolor amet taiyaki chartreuse distillery viral post-ironic kale chips fashion axe cardigan neutra cray wolf squid. +1 four dollar toast poutine humblebrag lyft street art, man braid listicle. Iceland fingerstache photo booth organic ugh af narwhal pabst kitsch kogi mustache. Tousled brooklyn +1 brunch disrupt tattooed succulents blue bottle trust fund. Plaid trust fund post-ironic cornhole church-key craft beer forage. Shaman brooklyn umami cold-pressed pitchfork keytar.'
+      'I came to the realization at 22 years old that I needed to somehow accelerate my life into a positive direction. So I did like my father before me, I enlisted in the United States Navy. Ironic enough, we both spent our first christmas in Thailand. That service helped shape me into a disciplined, mission oriented, and structured man. It was on that carrier flight deck that I learned how to work under extreme pressure in an ultra fast paced environment and succeed. Embrace that I didn’t know all the answers but how and where to find the solution with efficiency. In hindsight this was probably the most significant decision of my life.'
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ export const storyData = [
     image: 'school1',
     title: 'Back to School',
     description:
-      "Seitan bespoke hashtag chicharrones. Hashtag organic tousled, 90's schlitz jianbing truffaut. Four dollar toast blue bottle vegan poutine VHS. Knausgaard messenger bag hammock, leggings tilde PBR&B bitters schlitz umami. Direct trade succulents dreamcatcher portland air plant ethical leggings unicorn tattooed jianbing typewriter man braid plaid."
+      'After serving my time in the Navy I decided I needed to finish what I started and acquire my degree (Florida International University). I blindly dove right into the world of computers because I knew the rate of growth and impact was unmatched. If only I knew ahead of time the world of hurt that was awaiting my brain. The concepts of algorithms, data structures, object oriented programing, and the famous ‘this’ were going to kill me. It was beyond difficult for me, but I kept my head high and kept moving forward. I used to be afraid of failing, but programming showed me how important it was to fail (that’s the backbone of testing) and I embraced it.'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const storyData = [
     image: 'school2',
     title: 'Never Stop Learning',
     description:
-      "Adaptogen tbh raclette wolf brooklyn edison bulb selfies yr kitsch coloring book small batch cliche succulents offal. Literally ethical drinking vinegar palo santo celiac adaptogen microdosing aesthetic neutra normcore humblebrag tbh pitchfork. VHS YOLO pour-over selfies synth. Pour-over vaporware crucifix gentrify, godard fixie PBR&B you probably haven't heard of them meditation ramps aesthetic whatever yuccie. Blue bottle cornhole meggings chambray raclette ugh."
+      'You think I might have been satisfied with earning my degree in IT Software, but the total opposite was true. I wanted more, I needed more. So I joined the Wyncode Academy full stack web development program and I can easily say it was one of the best decisions of my life. I was finally able to learn how to build full applications from idea to MVP. I built my own database with postgreSQL, fetched and stored data with Ruby, and rendered super sleek modern application with React. All in under 10 weeks, making this the hardest (no exageration) and most rewarding boot camp of my life!'
   },
   {
     id: 3,
@@ -29,6 +29,6 @@ export const storyData = [
     image: 'work',
     title: 'Into the Wild',
     description:
-      "Pinterest raclette brunch vice 90's live-edge, vegan cronut. Bicycle rights woke poke craft beer locavore. Meggings sriracha franzen prism church-key, gochujang bicycle rights biodiesel semiotics pabst butcher portland. Food truck irony heirloom cronut vape distillery sustainable whatever tacos bicycle rights. Vape bespoke freegan retro, cornhole fashion axe leggings jianbing viral godard kogi celiac 3 wolf moon stumptown biodiesel. Gastropub taiyaki semiotics, pop-up waistcoat."
+      'So here I am, after serving the navy, completing my bachelors, and surviving a coding bootcamp. Ready to use my life experiences and knowledge to continue to make simple, seamless, and efficient applications. If I’m not at a tech meetup, Code for Miami event, or walking my dogs, then I’m probably at home learning more frameworks and libraries. I absolutely love this field. I have the power and skills to address any issue and create beautiful solutions. So allow me to get back to work and enjoy the rest of the app.'
   }
 ]
