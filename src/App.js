@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import Welcome from './components/welcome/Welcome'
 import MyStory from './components/myStory/MyStory'
 import MyProjects from './components/myProjects/MyProjects'
