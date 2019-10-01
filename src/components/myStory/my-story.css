@@ -28,6 +28,10 @@
 }
 .story-txt h1 {
   margin: 0 0 20px;
+  color: rgba(0, 0, 0, 0.801);
+}
+.story-txt p {
+  color: #7d7d7e;
 }
 .my-story-label,
 .story-two h1,

@@ -37,6 +37,7 @@
   transform: translateY(1.4rem);
   justify-self: right;
   box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.187);
+  color: rgba(0, 0, 0, 0.801);
 }
 .project-title,
 .project-links {
@@ -108,9 +109,11 @@
   font-size: 1.7rem;
   width: 95%;
   height: fit-content;
+  color: #7d7d7e;
 }
 .project-description h2 {
   margin-bottom: 1.2rem;
+  color: rgba(0, 0, 0, 0.801);
 }
 
 .project-links {
