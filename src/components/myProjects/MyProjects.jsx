@@ -40,7 +40,7 @@ const MyProjects = () => {
         <h1>{projectData[index].title}</h1>
       </div>
       <div className='carousel-projects'>
-        <img src={projectData[index].image} className='project-image' alt='project' />
+        <div className={`project-image ${projectData[index].title}`}></div>
 
         <div className='projects-indicator'>
           {projectData.map(project => {
@@ -50,12 +50,12 @@ const MyProjects = () => {
                 className={`ind-btn ${showIndex(project.id)}`}
                 onClick={_ => handleClick(project.id)}
               >
-                <i class={project.icon}></i>
+                <i className={project.icon}></i>
               </button>
             )
           })}
           <button className='pause-btn' onClick={handlePlay}>
-            {isPlaying ? <i class='fas fa-pause'></i> : <i class='fas fa-play'></i>}
+            {isPlaying ? <i className='fas fa-pause'></i> : <i className='fas fa-play'></i>}
           </button>
         </div>
 

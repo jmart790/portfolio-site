@@ -5,12 +5,12 @@ function Welcome() {
   const INITIAL_INDEX = 0
   const [index, setIndex] = useState(INITIAL_INDEX)
   const messages = [
-    { id: 0, message: 'Hi there!', image: 'wave-pose.png' },
-    { id: 1, message: "I'm Josh", image: 'wave-pose.png' },
-    { id: 2, message: 'I would describe myself as a...', image: 'balance-pose.png' },
-    { id: 3, message: 'Software Developer', image: 'surf-pose.png' },
-    { id: 4, message: 'Problem Solver', image: 'moon-pose.png' },
-    { id: 5, message: 'Maker of cool things', image: 'dragon-pose.png' }
+    { id: 0, message: 'Hi there!', image: 'landing.png' },
+    { id: 1, message: "I'm Josh", image: 'superme.png' },
+    { id: 2, message: 'I would describe myself as a...', image: 'thinking.png' },
+    { id: 3, message: 'Software Developer', image: 'computer.png' },
+    { id: 4, message: 'Problem Solver', image: 'problem.png' },
+    { id: 5, message: 'Maker of cool things', image: 'stuff.png' }
   ]
 
   useEffect(() => {
@@ -26,14 +26,14 @@ function Welcome() {
 
   return (
     <div className='welcome-container container'>
-      <div class='talk-bubble tri-right round right-in'>
-        <div class='talktext'>
+      <div className='talk-bubble tri-right round right-in'>
+        <div className='talktext'>
           <p>{messages[index].message}</p>
         </div>
       </div>
       {/* <div className='call-to-action'>v</div> */}
       <div className='bitmoji'>
-        <img src={require(`./${messages[index].image}`)} alt='wave pose' />
+        <img src={require(`./images/${messages[index].image}`)} alt='wave pose' />
       </div>
     </div>
   )

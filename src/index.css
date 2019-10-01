@@ -38,28 +38,54 @@ If no grid support, limit width to 50em and center align
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 
+/* mobile display */
 @supports (display: grid) {
   @media screen and (max-width: 599px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 400px 750px 1300px 500px;
+      grid-template-rows: 400px 750px 1500px 500px;
     }
   }
-
+  /* tablet display */
   @media screen and (min-width: 600px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 700px 500px 1200px 600px;
+      grid-template-rows: 500px 700px 1550px 600px;
     }
   }
-
+  /* medium display */
+  @media screen and (min-width: 900px) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 500px 650px 1600px 600px;
+    }
+    .container {
+      padding: 50px;
+    }
+  }
+  /* normal display */
   @media screen and (min-width: 1200px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 700px 500px 1600px 600px;
+      grid-template-rows: 600px 650px 1600px 600px;
+    }
+    .container {
+      padding: 50px 100px;
+    }
+  }
+  /* large display */
+  @media screen and (min-width: 1800px) {
+    .site {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 600px 650px 1800px 600px;
+    }
+    .container {
+      padding: 100px 200px;
     }
   }
 }
