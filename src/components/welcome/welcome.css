@@ -6,22 +6,20 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
-    'header image'
+    'texts image'
     'texts   image'
     'action .';
 }
 .welcome-text {
-  grid-area: header;
-}
-.professional-label {
   grid-area: texts;
 }
+
 .bitmoji {
   grid-area: image;
   justify-self: center;
 }
 .bitmoji img {
-  width: 15rem;
+  width: 80%;
 }
 .call-to-action {
   grid-area: action;
@@ -35,6 +33,7 @@
   width: 12rem;
   background-color: white;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
+  place-self: end;
 }
 
 .round {
