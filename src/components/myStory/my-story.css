@@ -1,7 +1,7 @@
 .my-story-container {
   transform: translateY(-60px);
   display: grid;
-  grid-template-rows: 25% 75% 20%;
+  grid-template-rows: 12rem 70% 10rem;
 }
 .my-story-label {
   padding: 1rem 0;
@@ -29,40 +29,53 @@
 .story-txt h1 {
   margin: 0 0 20px;
 }
-.story-img,
-.story-buttons button {
-  border-radius: 50%;
-}
-.story-img {
-  height: 10rem;
-  width: 10rem;
-  shape-outside: circle();
-}
-.story-one-img {
-  background-color: aqua;
-  float: left;
-  margin: 2rem 1rem 1rem 0;
-}
-.story-two-img {
-  background-color: rgb(255, 77, 0);
-  float: right;
-  margin: 2rem 0 1rem 1rem;
-}
 .my-story-label,
 .story-two h1,
 .story-four h1 {
   text-align: end;
 }
-.story-three-img {
-  background-color: rgb(34, 255, 0);
+.story-img,
+.story-buttons button {
+  border-radius: 50%;
+}
+.story-img {
+  height: 15rem;
+  width: 15rem;
+  shape-outside: circle();
+}
+
+.story-one-img {
+  background-image: url('./images/navy2.png');
   float: left;
   margin: 2rem 1rem 1rem 0;
+  background-size: cover;
+}
+.story-two-img {
+  background-image: url('./images/school1.png');
+  float: right;
+  margin: 2rem 0 1rem 1rem;
+  background-size: 75%;
+}
+.story-three-img {
+  background-image: url('./images/school2.png');
+  float: left;
+  margin: 2rem 1rem 1rem 0;
+  background-size: 75%;
 }
 
 .story-four-img {
-  background-color: orange;
+  background-image: url('./images/work.png');
   float: right;
   margin: 2rem 0 1rem 1rem;
+  background-size: 75%;
+}
+.story-one-img,
+.story-two-img,
+.story-three-img,
+.story-four-img {
+  background-color: rgb(241, 241, 241);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .story-buttons {
@@ -81,7 +94,7 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
 }
 
-.story-buttons button:active,
+.story-buttons .active,
 .story-buttons button:hover,
 .story-buttons button:focus {
   background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
