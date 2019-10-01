@@ -3,7 +3,7 @@
   -webkit-clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
   clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
   display: grid;
-  grid-template-rows: 26% 8% 55%;
+  grid-template-rows: 20rem 6rem 50rem;
 }
 .my-projects-label {
   margin: 4rem 0;
@@ -23,11 +23,12 @@
 }
 .carousel-projects {
   display: grid;
-  grid-template-rows: 2fr 1fr 0.5fr 2fr 1fr;
+  grid-template-rows: 1fr 4rem 3rem auto 4rem;
   justify-items: center;
   border: 10px solid white;
   border-radius: 25px;
   box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.187);
+  height: fit-content;
 }
 .project-title {
   z-index: -1;
@@ -43,11 +44,31 @@
 }
 .project-image {
   width: 95%;
+  height: 30rem;
   padding: 1rem 0;
+  margin: 1rem 0;
+  border-radius: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(241, 241, 241);
+}
+.project-image.Votelity {
+  background-image: url('./images/votelity.png');
+}
+.project-image.Tipsee {
+  background-image: url('./images/tipsee.png');
+}
+.project-image.Todo {
+  background-image: url('./images/todo.png');
+}
+.project-image.Portfolio {
+  background-image: url('./images/accomplished.png');
 }
 .projects-indicator {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+  justify-content: space-between;
   height: 100%;
   width: 95%;
 }
@@ -55,11 +76,15 @@
 .projects-indicator button {
   font-size: 2.5rem;
   padding: 0 1rem;
-}
-
-.pause-btn,
-.unselected-project {
   background-color: transparent;
+  transition: all 0.3s;
+}
+.projects-indicator button i:hover {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  border-radius: 25px;
+}
+.pause-btn {
+  justify-self: end;
 }
 .pause-btn:hover {
   transform: scale(1.1);
@@ -67,8 +92,11 @@
 .pause-btn:active {
   transform: scale(0.9);
 }
-
-.selected-project {
+.carousel-projects i {
+  padding: 1rem;
+  min-width: 3rem;
+}
+.selected-project i {
   border-radius: 25px;
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   color: white;
@@ -79,6 +107,7 @@
   line-height: 1.7rem;
   font-size: 1.7rem;
   width: 95%;
+  height: fit-content;
 }
 .project-description h2 {
   margin-bottom: 1.2rem;
