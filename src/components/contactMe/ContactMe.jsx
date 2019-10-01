@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import useInput from '../hooks/useInput'
+import Axios from 'axios'
 import './contact-me.css'
 
 function ContactMe() {
@@ -8,8 +9,6 @@ function ContactMe() {
   const [message, bindMessage, resetMessage] = useInput('')
   const [submitted, setSubmitted] = useState(false)
   const [reply, setReply] = useState('')
-  const TOPIC = 'MY_SITE_MESSAGE'
-  const RECIPIENT = 'jmart790@fiu.edu'
 
   const validateEmail = email => /\S+@\S+\.\S+/.test(email)
 
@@ -19,11 +18,17 @@ function ContactMe() {
     setReply(reply)
   }
 
-  const sendEmail = _ => {
-    fetch(
-      `http://127.0.0.1:3001/send-email?recipient=${RECIPIENT}&sender=${email}&topic=${TOPIC}&text=${message}`
-    ).catch(err => console.log(err))
-    console.log('sent email', RECIPIENT)
+  const sendEmail = (name, email, message) => {
+    const body = { name, email, message }
+    Axios.post('http://localhost:3030/api/email', body)
+      .then(res => {
+        if (res.data.success) {
+          console.log('Email sent')
+        } else {
+          console.log('Email failed to send')
+        }
+      })
+      .catch(err => console.log('Email failed to send'))
   }
 
   const submitHandler = e => {
@@ -35,7 +40,7 @@ function ContactMe() {
       if (validateEmail(cEmail)) {
         handleReply(cName)
         setSubmitted(true)
-        // sendEmail()
+        sendEmail(cName, cEmail, cMessage)
         resetName()
         resetEmail()
         resetMessage()
