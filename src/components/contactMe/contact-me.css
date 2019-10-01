@@ -53,6 +53,7 @@ input:focus {
   margin: 28px 0 0;
   font-size: 1.7rem;
   font-weight: bold;
+  color: rgba(0, 0, 0, 0.801);
 }
 .submit-area {
   display: grid;
