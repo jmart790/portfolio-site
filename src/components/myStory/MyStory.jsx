@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './my-story.css'
+import { storyData } from './storyData'
 
 function MyStory() {
-  const [selectedStory, setSelectedStory] = useState('story-one')
-  const [storyData, setStoryData] = useState({})
+  const [index, setIndex] = useState(0)
 
   const handleClick = storyPoint => {
-    setSelectedStory(storyPoint)
+    setIndex(storyPoint)
   }
-
-  useEffect(_ => {
-    const storyData = require('./myStoryData.json')
-    setStoryData(storyData)
-  }, [])
 
   return (
     <div className='my-story-container container'>
@@ -20,19 +15,26 @@ function MyStory() {
         <h1>My story</h1>
       </div>
 
-      <div className={`story-content ${selectedStory}`}>
-        <div className={`story-img ${selectedStory}-img`}></div>
+      <div className={`story-content ${storyData[index].class}`}>
+        <div className={`story-img ${storyData[index].class}-img`}></div>
         <div className='story-txt'>
-          <h1>{selectedStory}</h1>
-          <p>{storyData[selectedStory]}</p>
+          <h1>{storyData[index].title}</h1>
+          <p>{storyData[index].description}</p>
         </div>
       </div>
 
       <div className='story-buttons'>
-        <button onClick={_ => handleClick('story-one')}>1</button>
-        <button onClick={_ => handleClick('story-two')}>2</button>
-        <button onClick={_ => handleClick('story-three')}>3</button>
-        <button onClick={_ => handleClick('story-four')}>4</button>
+        {storyData.map(story => {
+          return (
+            <button
+              className={index === story.id ? 'active' : ''}
+              key={story.id}
+              onClick={_ => handleClick(story.id)}
+            >
+              {story.id + 1}
+            </button>
+          )
+        })}
       </div>
     </div>
   )
