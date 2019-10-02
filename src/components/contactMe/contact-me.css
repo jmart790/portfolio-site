@@ -43,6 +43,8 @@ input {
   border: 0;
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
+  color: rgba(0, 0, 0, 0.801);
+  font-size: 1.7rem;
 }
 input:focus {
   border-bottom: 2px solid #78788c;
@@ -51,7 +53,7 @@ input:focus {
   content: attr(name);
   display: block;
   margin: 28px 0 0;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.801);
 }
