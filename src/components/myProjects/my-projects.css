@@ -1,7 +1,7 @@
 .my-projects-container {
   background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
-  -webkit-clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
-  clip-path: polygon(100% 10%, 100% 90%, 50% 100%, 0 90%, 0 0);
+  -webkit-clip-path: polygon(100% 8%, 100% 90%, 50% 100%, 0 90%, 0 0);
+  clip-path: polygon(100% 8%, 100% 90%, 50% 100%, 0 90%, 0 0);
   display: grid;
   grid-template-rows: 20rem 6rem 50rem;
 }
