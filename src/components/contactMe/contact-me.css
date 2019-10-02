@@ -23,7 +23,7 @@
 }
 
 .form {
-  height: 640px;
+  height: 680px;
   padding: 20px 30px;
   box-sizing: border-box;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.187);
@@ -112,10 +112,8 @@ input:focus {
 }
 .footer {
   grid-area: footer;
-  justify-self: center;
-  margin: 1rem 0;
   display: flex;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
 }
 .footer .thanks {
