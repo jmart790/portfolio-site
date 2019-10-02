@@ -1,7 +1,7 @@
 .my-story-container {
   transform: translateY(-60px);
   display: grid;
-  grid-template-rows: 12rem 70% 10rem;
+  grid-template-rows: 12rem 77% 10rem;
 }
 .my-story-label {
   padding: 1rem 0;
@@ -22,16 +22,17 @@
   height: fit-content;
 }
 .story-txt {
-  text-align: justify;
-  line-height: 1.7rem;
   font-size: 1.5rem;
 }
 .story-txt h1 {
   margin: 0 0 20px;
   color: rgba(0, 0, 0, 0.801);
+  line-height: 3rem;
 }
 .story-txt p {
   color: #7d7d7e;
+  text-align: justify;
+  line-height: 2rem;
 }
 .my-story-label,
 .story-two h1,
