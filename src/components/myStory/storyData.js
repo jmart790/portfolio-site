@@ -3,7 +3,7 @@ export const storyData = [
     id: 0,
     class: 'story-one',
     image: 'navy',
-    title: 'US Navy',
+    title: 'Out to Sea',
     description:
       'I came to the realization at 22 years old that I needed to somehow accelerate my life into a positive direction. So I did like my father before me, I enlisted in the United States Navy. Ironic enough, we both spent our first christmas in Thailand. That service helped shape me into a disciplined, mission oriented, and structured man. It was on that carrier flight deck that I learned how to work under extreme pressure in an ultra fast paced environment and succeed. Embrace that I didn’t know all the answers but how and where to find the solution with efficiency. In hindsight this was probably the most significant decision of my life.'
   },
