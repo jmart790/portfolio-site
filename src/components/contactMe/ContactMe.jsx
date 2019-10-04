@@ -20,7 +20,7 @@ function ContactMe() {
 
   const sendEmail = (name, email, message) => {
     const body = { name, email, message }
-    Axios.post('http://localhost:3030/api/email', body)
+    Axios.post('https://portfolio-email-api.herokuapp.com/api/email', body)
       .then(res => {
         if (res.data.success) {
           console.log('Email sent')
@@ -74,7 +74,6 @@ function ContactMe() {
               src={require('./images/talksoon.png')}
               alt='talksoon'
             />
-
             <div
               className={`talk-bubble-blue tri-left round left-in ${submitted ? 'show' : 'hide'}`}
             >
@@ -82,7 +81,6 @@ function ContactMe() {
                 <p>{reply}</p>
               </div>
             </div>
-
             <button className='form-btn'>Send</button>
           </div>
         </form>
