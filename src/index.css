@@ -71,7 +71,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 600px 700px 1750px 600px;
+      grid-template-rows: 600px 750px 1750px 600px;
     }
     .container {
       padding: 50px 100px;
