@@ -43,6 +43,7 @@
 .project-links {
   font-size: 1.5rem;
 }
+
 .project-image {
   width: 95%;
   height: 30rem;
@@ -116,8 +117,20 @@
 }
 
 .project-links {
-  color: black;
   width: 95%;
   text-align: end;
   padding: 1rem 0;
+}
+.project-links span {
+  color: #7d7d7e;
+}
+.project-links a {
+  text-decoration: none;
+  color: #66a6ff;
+  transition: all 0.3s;
+}
+
+.project-links a:hover {
+  text-decoration: none;
+  color: #fd868c;
 }
