@@ -40,7 +40,9 @@ const MyProjects = () => {
         <h1>{projectData[index].title}</h1>
       </div>
       <div className='carousel-projects'>
-        <div className={`project-image ${projectData[index].title}`}></div>
+        {/* <div className='project-image-container'> */}
+        <div className={`project-image ${projectData[index].title}`} />
+        {/* </div> */}
 
         <div className='projects-indicator'>
           {projectData.map(project => {
@@ -67,7 +69,13 @@ const MyProjects = () => {
         </div>
 
         <div className='project-links'>
-          <a href={projectData[index].github}>Github Link</a>
+          <a href={projectData[index].site} target='_blank'>
+            Live Site
+          </a>
+          <span> | </span>
+          <a href={projectData[index].github} target='_blank'>
+            Source Code
+          </a>
         </div>
       </div>
     </div>
