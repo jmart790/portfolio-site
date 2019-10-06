@@ -40,15 +40,15 @@ CSS Grid layout for wider screens, when browser supports grid:
 
 /* mobile display */
 @supports (display: grid) {
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 650px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 400px 920px 1800px 500px;
+      grid-template-rows: 400px 975px 1800px 500px;
     }
   }
   /* tablet display */
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 651px) {
     .site {
       display: grid;
       grid-template-columns: 1fr;
