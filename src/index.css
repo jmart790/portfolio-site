@@ -44,7 +44,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 400px 975px 1800px 500px;
+      grid-template-rows: 400px 900px 1800px 500px;
     }
   }
   /* tablet display */

@@ -1,7 +1,7 @@
 .my-story-container {
   transform: translateY(-60px);
   display: grid;
-  grid-template-rows: 12rem 77% 10rem;
+  grid-template-rows: 12rem 1fr 10rem;
 }
 .my-story-label {
   padding: 1rem 0;
