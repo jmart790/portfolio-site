@@ -69,11 +69,11 @@ const MyProjects = () => {
         </div>
 
         <div className='project-links'>
-          <a href={projectData[index].site} target='_blank'>
+          <a href={projectData[index].site} target='_blank' rel='noopener noreferrer'>
             Live Site
           </a>
           <span> | </span>
-          <a href={projectData[index].github} target='_blank'>
+          <a href={projectData[index].github} target='_blank' rel='noopener noreferrer'>
             Source Code
           </a>
         </div>
