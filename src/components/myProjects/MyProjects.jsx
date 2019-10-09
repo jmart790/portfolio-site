@@ -23,6 +23,7 @@ const MyProjects = () => {
 
   const handleClick = id => setIndex(id)
   const handlePlay = _ => setIsplaying(!isPlaying)
+  const handleStopForVideo = _ => console.log('pressed stop play')
   const showIndex = currentIndex =>
     index === currentIndex ? 'selected-project' : 'unselected-project'
 
@@ -40,9 +41,14 @@ const MyProjects = () => {
         <h1>{projectData[index].title}</h1>
       </div>
       <div className='carousel-projects'>
-        {/* <div className='project-image-container'> */}
-        <div className={`project-image ${projectData[index].title}`} />
-        {/* </div> */}
+        <div className='project-video' onClick={handleStopForVideo}>
+          <iframe
+            title='thisMovie'
+            src={projectData[index].video}
+            frameBorder='0'
+            allowFullScreen
+          ></iframe>
+        </div>
 
         <div className='projects-indicator'>
           {projectData.map(project => {
