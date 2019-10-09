@@ -44,8 +44,14 @@
   font-size: 1.5rem;
 }
 
-.project-image {
+.project-video {
   width: 95%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-top: 1rem;
+  position: relative;
+
+  /* width: 95%;
   height: 30rem;
   padding: 1rem 0;
   margin: 1rem 0;
@@ -53,8 +59,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241); */
 }
+.project-video iframe {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .project-image.Votelity {
   background-image: url('./images/votelity.png');
 }
@@ -68,6 +82,7 @@
   background-image: url('./images/accomplished.png');
 }
 .projects-indicator {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
   justify-content: space-between;
