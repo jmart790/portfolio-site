@@ -44,7 +44,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 400px 900px 1800px 500px;
+      grid-template-rows: 400px 900px 1600px 500px;
     }
   }
   /* tablet display */
@@ -52,7 +52,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 500px 900px 1800px 600px;
+      grid-template-rows: 500px 900px 1700px 600px;
     }
   }
   /* medium display */
@@ -71,7 +71,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 600px 750px 1750px 600px;
+      grid-template-rows: 600px 750px 1900px 600px;
     }
     .container {
       padding: 50px 100px;
@@ -82,7 +82,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 600px 700px 1800px 600px;
+      grid-template-rows: 600px 700px 2000px 600px;
     }
     .container {
       padding: 100px 200px;
