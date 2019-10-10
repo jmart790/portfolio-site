@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './my-projects.css'
 import { projectData } from './projectData'
+// import youtube from './youtubeScript'
 
 const MyProjects = () => {
   const INITIAL_INDEX = 0
@@ -23,7 +24,7 @@ const MyProjects = () => {
 
   const handleClick = id => setIndex(id)
   const handlePlay = _ => setIsplaying(!isPlaying)
-  const handleStopForVideo = _ => console.log('pressed stop play')
+  const handleStopForVideo = _ => setIsplaying(false)
   const showIndex = currentIndex =>
     index === currentIndex ? 'selected-project' : 'unselected-project'
 
@@ -41,7 +42,7 @@ const MyProjects = () => {
         <h1>{projectData[index].title}</h1>
       </div>
       <div className='carousel-projects'>
-        <div className='project-video' onClick={handleStopForVideo}>
+        <div className='project-video' onFocus={handleStopForVideo}>
           <iframe
             title='thisMovie'
             src={projectData[index].video}
