@@ -50,16 +50,6 @@
   padding-bottom: 56.25%;
   margin-top: 1rem;
   position: relative;
-
-  /* width: 95%;
-  height: 30rem;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  border-radius: 25px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(241, 241, 241); */
 }
 .project-video iframe {
   border: 2px solid rgba(0, 0, 0, 0.15);
@@ -69,18 +59,6 @@
   height: 100%;
 }
 
-.project-image.Votelity {
-  background-image: url('./images/votelity.png');
-}
-.project-image.Tipsee {
-  background-image: url('./images/tipsee.png');
-}
-.project-image.Todo {
-  background-image: url('./images/todo.png');
-}
-.project-image.Portfolio {
-  background-image: url('./images/accomplished.png');
-}
 .projects-indicator {
   margin-top: 1rem;
   display: grid;
@@ -148,4 +126,30 @@
 .project-links a:hover {
   text-decoration: none;
   color: #fd868c;
+}
+
+@supports (display: grid) {
+  @media screen and (min-width: 1200px) {
+    .carousel-projects {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content 8rem;
+      grid-template-areas:
+        'description video'
+        'links controller';
+    }
+    .project-video {
+      grid-area: video;
+    }
+    .projects-indicator {
+      grid-area: controller;
+      margin: 0;
+    }
+    .project-description {
+      grid-area: description;
+    }
+    .project-links {
+      grid-area: links;
+      text-align: left;
+    }
+  }
 }
