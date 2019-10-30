@@ -4,7 +4,7 @@ export const projectData = [
     video: 'https://www.youtube.com/embed/lUGtlNuAQHw?rel=0&amp;controls=0',
     title: 'Votelity',
     description:
-      'A Ruby on Rails application which compares politicians based off their voting history. Vote Smart API was used to retrieve and store the data within postgreSQL. Ruby handled API and database calls, React.js rendered the data on the front end, and Heroku deployed the app and images separately. Created mockups/prototypes via Adobe XD',
+      'Compare any two 2020 presidential candidates by their voting history, political background, and donor demographic. Find candidates that match your political values.',
     github: 'https://github.com/wyncode/C34_anthony_gabriel_joshua_miguel',
     site: 'https://votelity.herokuapp.com',
     icon: 'fas fa-flag-usa'
@@ -14,7 +14,7 @@ export const projectData = [
     video: 'https://www.youtube.com/embed/h2bDs6Ft0zg?rel=0&amp;controls=0',
     title: 'Tipsee',
     description:
-      'A React application that retrieves multiple drink combinations after the user enters up to three ingredients. CocktailDB API was used to retrieve the data via Axios and rendered on the front end via React. Heroku was used to deploy.',
+      'Recieve possible drink combinations based off entered ingredients which provides you with an option to create handcrafted cocktails without making an extra trip to the grocery store.',
     github: 'https://github.com/wyncode/joshua_matthew_michaela_nicole',
     site: 'https://tipsee.herokuapp.com',
     icon: 'fas fa-wine-glass-alt'
@@ -24,7 +24,7 @@ export const projectData = [
     video: 'https://www.youtube.com/embed/cPEMerpF2YM?rel=0&amp;controls=0',
     title: 'Todo',
     description:
-      'A simple modern React To-do application where users can enter, mark complete, and delete tasks all while the app tracks the remaining incomplete tasks.',
+      'A simple modern To-Do application where you can enter, mark complete, and delete tasks all while the app tracks the remaining incomplete tasks.',
     github: 'https://github.com/jmart790/React-Todo-App',
     site: '#',
     icon: 'fas fa-tasks'
@@ -34,7 +34,7 @@ export const projectData = [
     video: 'https://www.youtube.com/embed/1TkzfcU0gxc?rel=0&amp;controls=0',
     title: 'Portfolio',
     description:
-      'A fun interactive React hooks application displaying my most recent projects, history, and contact form. Bitmoji was used for character content. Sendgrid API was used to forward emails.',
+      'A fun interactive application displaying my most recent projects, history, and contact form.',
     github: 'https://github.com/jmart790/portfolio-site',
     site: '#',
     icon: 'far fa-laugh-wink'
